@@ -12,7 +12,7 @@ export PATH="$HOME/.elan/bin:$PATH"
 cd "$(dirname "$0")" || exit 1
 NS="Blundon"
 LIB="Blundon"
-REQUIRED="Blundon.blundon Blundon.blundon_core Blundon.core_identity Blundon.height_sq_mul Blundon.circumradius_sq_mul"
+REQUIRED="Blundon.blundon Blundon.blundon_core Blundon.core_identity Blundon.height_sq_mul Blundon.circumradius_sq_mul Blundon.l14_blundon Blundon.l14b_norm_eq Blundon.l14b_not_collinear Blundon.l14b_inradius Blundon.l14w_blundon Blundon.Classical.cov_D6_lower Blundon.Classical.cov_D6_upper Blundon.Classical.cov_radicand_core Blundon.Classical.cov_triangle_radicand Blundon.Classical.cov_D6_obligation"
 SOURCES="Blundon/*.lean Blundon.lean"
 [ -e .lake/packages/mathlib ] || { echo "FAIL: Mathlib packages missing (run setup by hand)"; exit 1; }
 if [ "${SCAFFOLD:-0}" != "1" ]; then
